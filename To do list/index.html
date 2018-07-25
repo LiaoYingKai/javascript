@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <script type="text/javascript" src="javascript/list.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <title>To Do list</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="nav_tag">My tasks</div>
+    <div class="nav_tag">In Progress</div>
+    <div class="nav_tag">Complete</div>
+  </div>
+  <input type="text" id="add_new_task" placeholder="+ Add Task">
+  <div class="add_task">
+    <div class="title">
+      <input type="checkbox" id="do_check">
+      <label for="do_check">
+        <div class="check_do_style"><i class="fas fa-check"></i></div>
+      </label>
+      <p>Type Somthing Here......</p>
+      <input type="checkbox" id="important_check">
+      <label for="important_check">
+        <i class="fas fa-star "></i>
+      </label>
+      <i class="fas fa-pen"></i>
+    </div>
+    <div class="content">
+      <p><i class="fas fa-calendar-alt"></i>Deadline</p>
+      <input type="date" class="date">
+      <input type="time" class="time">
+      <p><i class="far fa-file"></i>File</p>
+      <div class="new_file">+</div>
+      <p><i class="far fa-comment-dots"></i>Comment</p>
+      <textarea class="list_content" name="name" rows="4" cols="40"></textarea>
+    </div>
+    <div class="task_button">
+      <p class="cancel">x Cancel</p>
+      <p class="add">+ Add Task</p>
+    </div>
+  </div>
+</body>
+
+</html>

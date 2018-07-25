@@ -1,0 +1,28 @@
+.box1 {
+  display: flex;
+  width: 30vw;
+  height: 5vh;
+  margin: 30px auto 0;
+  font-size: 36px;
+}
+
+#input_text {
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 20px;
+  width: 5vw;
+}
+
+#save {}
+
+#cancel, #delete, #edit {
+  display: none;
+}
+
+.list_demo {
+  width: 20vw;
+  margin: 30px auto 0;
+  font-size: 36px;
+}
