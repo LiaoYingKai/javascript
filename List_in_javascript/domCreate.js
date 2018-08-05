@@ -8,7 +8,7 @@ function createList() {
 }
 
 function newListTask() {
-  var user_input = document.querySelector("#input_text").value;
+  let user_input = document.querySelector("#input_text").value;
   let user_input_node = document.createTextNode(user_input);
   let li_node = document.createElement("li");
   li_node.appendChild(user_input_node);
@@ -23,7 +23,7 @@ function newListTask() {
 }
 
 function editListTack() {
-  var user_input = document.querySelector("#input_text").value;
+  let user_input = document.querySelector("#input_text").value;
   let edit_text_node = document.createTextNode(user_input);
   let li_node = document.createElement("li");
   li_node.appendChild(edit_text_node);
