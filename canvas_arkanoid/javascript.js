@@ -6,20 +6,6 @@ var x = canvas.width / 2;
 var y = canvas.height - 30;
 var dy = -2;
 var dx = 2;
-var score = 0;
-var lives = 3;
-
-function drawScore() {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
-  ctx.fillText("Score:" + score, 8, 20);
-}
-
-function drawLive() {
-  ctx.font = "16px Arial";
-  ctx.fillStyle = "#0095DD";
-  ctx.fillText("Your lives" + lives, 75, 20);
-}
 
 function drawBall() {
   ctx.beginPath();
@@ -39,6 +25,22 @@ function drawPaddle() {
   ctx.fillStyle = "blue";
   ctx.fill();
   ctx.closePath();
+}
+
+var score = 0;
+
+function drawScore() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = "#0095DD";
+  ctx.fillText("Score:" + score, 8, 20);
+}
+
+var lives = 3;
+
+function drawLive() {
+  ctx.font = "16px Arial";
+  ctx.fillStyle = "#0095DD";
+  ctx.fillText("Your lives" + lives, 75, 20);
 }
 
 var rightPress = false;
