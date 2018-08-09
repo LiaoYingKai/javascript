@@ -10,3 +10,8 @@ function drawBird() {
   ctx.fill();
   ctx.closePath();
 }
+
+function resetBird() {
+  birdX = canvas.width / 2;
+  birdY = canvas.height / 2;
+}

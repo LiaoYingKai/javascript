@@ -19,3 +19,8 @@ function drawWaterPipe() {
   ctx.fill();
   ctx.closePath();
 }
+
+function resetWaterPipe() {
+  water_pipeX = canvas.width - water_pipe_width;
+  water_pipeY = 0;
+}
