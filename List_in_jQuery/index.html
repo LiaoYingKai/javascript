@@ -5,19 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="main.css">
   <title>To Do list</title>
 </head>
 
 <body>
-  <div class="box1">
-    <input id="input_text" type="text" placeholder="請輸入值">
-    <button id="save" onclick="newListTask()">輸入</button>
-    <button id="edit" onclick="editListTack()">修改 </button>
-    <button id="delete" onclick="deleteListTask()">刪除 </button>
-    <button id="cancel" onclick="doNoThing()">取消 </button>
+  <div class="content ">
+    <input type="text">
+    <div class="list_status">
+      <div class="all_list user_select_style">All Task</div>
+      <div class="undone_list ">Undone Task</div>
+      <div class="done_list ">Done Task</div>
+    </div>
+    <ul>
+      <li>
+        <input type="checkbox">
+        <p>just test text</p>
+        <i class="fas fa-times" onclick="remove()"></i>
+      </li>
+
+      <li>
+        <input type="checkbox">
+        <p>just test text</p>
+        <i class="fas fa-times"></i>
+      </li>
+    </ul>
   </div>
-  <div class="list_demo"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="javascript.js"></script>
 </body>
 
