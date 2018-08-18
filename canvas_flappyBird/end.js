@@ -9,7 +9,6 @@ var scoreY = canvas.height / 2 - 50;
 
 
 function end() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   ctx.fillStyle = "#b8291a";
   ctx.fillRect(restart_buttonX, restart_buttonY, restart_button_width, restart_button_height);

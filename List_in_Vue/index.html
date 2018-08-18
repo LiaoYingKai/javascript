@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="list">
+    <input type="text" @keyup.enter="addTask(newList)" v-model="newList">
+    <h2>代辦事項</h2>
+    <ul>
+      <li v-for="task in lists">
+        {{task.content}} - <a href="#" @click.prevent="removeTask(task)">刪除</a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascript.js">
+  </script>
+</body>
+
+</html>

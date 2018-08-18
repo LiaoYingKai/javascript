@@ -51,12 +51,15 @@ function status() {
   if (statu === "start") {
     resetBird();
     resetWaterPipe();
+    resetScore();
     start();
     requestAnimationFrame(status);
   } else if (statu === "ongoing") {
     draw();
     requestAnimationFrame(status);
   } else if (statu === "ending") {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     end();
     requestAnimationFrame(status);
   }
